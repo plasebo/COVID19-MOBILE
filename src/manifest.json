@@ -1,6 +1,6 @@
 {
   "name": "Covid-19 Mauritius",
-  "short_name": "Covid-19 MU",
+  "short_name": "Covid-19 Mauritius",
   "description": "Covid-19 Mauritius Live tracker",
   "start_url": "index.html",
   "scope": "/",
@@ -9,7 +9,7 @@
   "theme_color": "#ff2222",
   "orientation": "portrait",
   "icons": [{
-    "src": "static/256x256.png",
+    "src": "static/icons/256x256.png",
     "sizes": "256x256",
     "type": "image/png"
   }]

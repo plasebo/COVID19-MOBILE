@@ -202,7 +202,7 @@ module.exports = {
         from: resolvePath('src/static'),
         to: resolvePath('www/static'),
       },
-
+      'src/manifest.json',
     ]),
 
 
