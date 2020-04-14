@@ -6,16 +6,15 @@
     <f7-view>
       <f7-page>
         <f7-navbar title="Navigation"></f7-navbar>
-        <!-- <f7-block>Credits to:</f7-block> -->
         <f7-list>
           <f7-list-button>
-            <f7-link color="white" tab-link="#view-mu" text="Mauritius"></f7-link>    
+            <f7-link color="white" panel-close tab-link="#view-mu" text="Mauritius"></f7-link>    
           </f7-list-button>
           <f7-list-button>
-            <f7-link color="white" tab-link="#view-global" text="Worldwide stats"></f7-link>
+            <f7-link color="white" panel-close tab-link="#view-global" text="Worldwide stats"></f7-link>
           </f7-list-button>
           <f7-list-button>
-            <f7-link color="white" tab-link="#view-country" text="By country"></f7-link>
+            <f7-link color="white" panel-close tab-link="#view-country" text="By country"></f7-link>
           </f7-list-button>
           <f7-list-item header="Ress ou lakaz" title="Stay home, stay safe">
             <f7-icon f7="checkmark_seal_fill"></f7-icon>
@@ -31,7 +30,6 @@
     <f7-view>
       <f7-page>
         <f7-navbar title="Credits"></f7-navbar>
-        <!-- <f7-block>Credits to:</f7-block> -->
         <f7-list>
           <f7-list-item link="https://github.com/novelcovid/api" external header="Live tracker" title="NovelCovid" after="API">
           </f7-list-item>
@@ -83,18 +81,15 @@
   export default {
     data() {
       return {
-        // Framework7 Parameters
         f7params: {
-          name: 'Covid19-MU', // App name
-          theme: 'auto', // Automatic theme detection
-          // App root data
+          name: 'Covid19-MU',
+          theme: 'auto',
           data: function () {
             return {
 
             };
           },
 
-          // App routes
           routes: routes,
         },
       }
@@ -103,8 +98,6 @@
     },
     mounted() {
       this.$f7ready((f7) => {
-        // f7.dialog.alert('Component mounted');
-        // Call F7 APIs here
       });
     }
   }
