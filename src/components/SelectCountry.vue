@@ -25,7 +25,7 @@
       @success="changeCountry"
     ></v-cascade>
 
-    <h3 class="toUpperCase" v-if="countryCodeSelected !== ''">Country selected is: <b>{{countryCodeSelected}}</b></h3>
+    <h3 v-if="countryCodeSelected !== ''">Country selected is: <b>{{countryCodeSelected}}</b></h3>
   </div>
 </template>
 
@@ -65,7 +65,7 @@ export default {
         .then(data => {
           let countries = [];
           data.countries.forEach(function(val) {
-            let value = val.name.toString().toLowerCase();
+            let value = val.name;
             countries.push({
               key: value,
               label: value
