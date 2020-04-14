@@ -1,0 +1,179 @@
+/* Custom color theme properties */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --f7-theme-color: #ff2222;
+  --f7-theme-color-rgb: 255, 34, 34;
+  --f7-theme-color-shade: #cc2222;
+  --f7-theme-color-tint: #ee2222;
+  --f7-navbar-title-font-size : 1.25rem;
+  --f7-navbar-large-title-font-size : 1.75rem;
+}
+
+.list {
+  margin-top: 0;
+}
+
+.chartWrapper {
+  min-height: 400px;
+  .echarts {
+    width: 100%;
+    height: 400px;
+  }
+  .rel {
+    position: relative;
+  }
+  .trend {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 20px);
+    height: 320px;
+    opacity: 0.25;
+  }
+  .trendy {
+    position: absolute;
+    left: -9px;
+    bottom: -36px;
+    right: 0;
+    width: calc(100% + 18px);
+    height: 100%;
+    opacity: 0.6;
+  }
+  .abs {
+  position: absolute;
+  top: 0px;
+}
+}
+.framework7-root {
+  font-family: 'Poppins', sans-serif;
+}
+
+.safe-areas {
+  .page-content {
+    padding: 2rem 0 2rem 0;
+    background: #efeff4;
+    h2, h3, h4, h5, h6  {
+      font-weight: 500;
+      &.toUpperCase {
+        text-transform: uppercase;
+      }
+      small {
+        opacity: 0.8;
+        font-size: 0.8rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.countryWrapper {
+  width: 100%;
+  background: url('~@/assets/world.png') top center no-repeat;
+  background-size: contain;
+  position: relative;
+  &:before {
+    content: '';
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+  }
+}
+
+.navbar {
+  .navbar-inner {
+    .title, .title-large {
+      color: #fff;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+    .left{
+      .link {
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+      }
+    }
+    .right {
+      .link {
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+      }
+    }
+  }
+  
+}
+.navbar-bg {
+  background: url('~@/assets/footer.jpg') bottom right no-repeat !important;
+  background-size: cover !important;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+  position: relative;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(240deg, rgba(255,34,34,0.6) 0%, rgba(0,0,0,0.4) 50%);
+  }
+}
+
+.toolbar.toolbar-bottom {
+  background: url('~@/assets/footer.jpg') top center no-repeat !important;
+  background-size: cover !important;
+  box-shadow: 0px -3px 3px rgba(0,0,0,0.3);
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%);
+    z-index: 0;
+  }
+  .toolbar-inner {
+    .tab-link {
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+      &.tab-link-active {
+        color: var(--f7-theme-color);
+      }
+    }
+  }
+}
+
+.marginHeader {
+  margin-top: 100px;
+}
+
+.marginHeaderLess, .cascade__header {
+  margin-top: 72px !important;
+}
+
+.cascade__content {
+  text-transform: uppercase;
+  border-left: 1px solid #ff2222;
+  box-shadow: 6px 0 120px rgba(0,0,0,0.6), 4px 0 80px rgba(0,0,0,0.4);
+}
+
+.cascade__back, .cascade__mask {
+  display: none !important; 
+}
+
+.selectBlock {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+    .selectWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+}
+/* Your app custom styles here */
