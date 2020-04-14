@@ -25,7 +25,7 @@
       @success="changeCountry"
     ></v-cascade>
 
-    <h3 v-if="countryCodeSelected !== ''">Country selected is: <b>{{countryCodeSelected}}</b></h3>
+    <h3 v-if="countryCodeSelected !== ''">Country selected: <b>{{countryCodeSelected}}</b></h3>
   </div>
 </template>
 

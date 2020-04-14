@@ -22,7 +22,7 @@
         medium
         class="text-align-center no-margin-bottom"
         style="margin-top: 4em;"
-      >Today statistics</f7-block-title>
+      >Today statistics in Mauritius</f7-block-title>
       <summary-component countryToFetch="Mauritius" />
     </f7-block>
     <f7-block>

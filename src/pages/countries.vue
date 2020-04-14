@@ -22,10 +22,6 @@
     </f7-block>
 
     <f7-block v-if="countrySelected !== ''">
-      <f7-block-title
-        medium
-        class="text-align-center no-margin"
-      >Today statistics</f7-block-title>
       <summary-component :countryToFetch="countrySelected" />
     </f7-block>
     <f7-block v-if="countrySelected !== ''">
