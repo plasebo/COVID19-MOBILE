@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL = 'https://covid19.mathdro.id/api';
-const NINJA_URL = 'https://corona.lmao.ninja';
+const NINJA_URL = 'https://corona.lmao.ninja/v2';
 
 export class APIServiceCovid {
 
@@ -26,7 +26,7 @@ export class APIServiceCovid {
     }
 
     fetchHistory(country) { // for a detailed no of cases for a country over time
-        let url = `${NINJA_URL}/v2/historical/` +country;
+        let url = `${NINJA_URL}/historical/` +country;
         let data = axios.get(url).then(response => response.data);
         return data;
     }

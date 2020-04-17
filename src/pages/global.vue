@@ -25,6 +25,9 @@
       >Today statistics</f7-block-title>
       <summary-component countryToFetch="all" />
     </f7-block>
+    <!-- <f7-block>
+      <world-map-component />
+    </f7-block> -->
     <f7-block>
       <f7-block-title medium class="text-align-center no-margin">Trend</f7-block-title>
       <daily-component countryToFetch="all" />
@@ -33,12 +36,14 @@
 </template>
 <script>
 import SummaryComponent from "@/components/Summary.vue";
+// import WorldMapComponent from "@/components/WorldMap.vue";
 import DailyComponent from "@/components/TrendDaily.vue";
 
 export default {
   components: {
     SummaryComponent,
-    DailyComponent
+    DailyComponent,
+    // WorldMapComponent
   },
   data() {
     return {};

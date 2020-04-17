@@ -10,7 +10,7 @@
                   <f7-card outline>
                     <f7-card-content>
                       <h3>
-                        Confirmed today
+                        For today
                         <f7-chip
                           class="float-right"
                           :text="MUData.todayCases | numeralFormat"
@@ -21,6 +21,10 @@
                             f7="calendar"
                           ></f7-icon>
                         </f7-chip>
+                        <span v-if="MUData.affectedCountries">
+                          <br />
+                          <small>Retrieved from {{MUData.affectedCountries | numeralFormat}} countries</small>
+                        </span>
                       </h3>
                     </f7-card-content>
                   </f7-card>
