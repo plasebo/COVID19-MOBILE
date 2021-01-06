@@ -47,7 +47,7 @@
     "Samsung >= 5"
   ],
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.8.0",
     "dom7": "^2.1.3",
